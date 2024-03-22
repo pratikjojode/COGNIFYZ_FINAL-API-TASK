@@ -1,0 +1,35 @@
+.screen-container {
+    width: calc(100% - 100px);
+    height: 100%;
+    background-color: #FCDC2A;
+    border-radius: 30px;
+    background-color: #f7f3e6;
+    opacity: 0.8;
+    background-image: radial-gradient(circle at center center, #534e58, #271e02), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+    
+}
+
+/* *{
+    box-sizing:border-box ;
+    padding: 0;
+    margin: 0;
+
+} */
+  .flex {
+    display: flex;
+  }
+  
+  /* Media query for mobile screens */
+  @media screen and (max-width: 480px) {
+    .screen-container {
+      width: calc(100% - 20px); /* Adjust width for smaller screens */
+      border-radius: 20px; /* Adjust border radius for smaller screens */
+    }
+    
+    .flex {
+      flex-direction: column; /* Change flex direction to column for smaller screens */
+      align-items: center; /* Center align items for smaller screens */
+    }
+  }
+  

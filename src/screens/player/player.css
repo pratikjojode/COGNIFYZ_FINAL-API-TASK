@@ -1,0 +1,33 @@
+.left-player-body {
+  width: 68%;
+  margin-right: 2%;
+  height: 100%;
+}
+
+.right-player-body {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+  .left-player-body {
+    width: 100%; 
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  
+  .right-player-body {
+    width: 100%; 
+    margin-top: 20px;
+  }
+
+ .songCard-body{
+  margin-bottom: 50px;
+ }
+}

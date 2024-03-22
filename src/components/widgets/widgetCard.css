@@ -1,0 +1,84 @@
+.widgetcard-body {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #0d6bee;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.widgetcard-body:hover {
+  transform: translateY(-5px);
+}
+
+.widget-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #140202;
+  margin-bottom: 15px;
+}
+
+.widget-entry {
+  margin-bottom: 15px;
+}
+
+.widget-entry img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.widget-entry .entry-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.widget-entry .entry-subtitle {
+  font-size: 14px;
+  color: #c4d0e3;
+}
+
+.widget-fade {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4b5e7e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.widget-fade:hover {
+  background-color: #3b4a60;
+}
+
+.fade-button {
+  transform: rotate(90deg);
+}
+
+.fade-button svg {
+  fill: #c4d0e3;
+}
+
+/* Media query for mobile screens */
+@media screen and (max-width: 480px) {
+  .widgetcard-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 90%; /* Adjust the width for smaller screens */
+    margin: 0 auto; /* Center align the widgetcard-body */
+    margin-bottom: 20px; /* Add some bottom margin for spacing */
+    position: relative;
+    top: 30%;
+  }
+}
